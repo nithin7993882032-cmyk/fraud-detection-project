@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Fraud Detection</title>
+</head>
+
+<body>
+
+<h2>Credit Card Fraud Detection</h2>
+
+<form method="POST">
+
+Enter Transaction Amount:
+
+<input type="number" name="amount">
+
+<button type="submit">Check Transaction</button>
+
+</form>
+
+{% if prediction %}
+
+<h3>Result: {{prediction}}</h3>
+
+{% endif %}
+
+</body>
+</html>
